@@ -153,6 +153,7 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .contact-section h2 {
@@ -433,9 +434,15 @@ footer {
 
 /* styles for small mobile screens */
 @media (max-width: 480px) {
+  .main-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .landing-section {
     flex-direction: column;
     align-items: center;
+    width: 1024px;
   }
 
   .about-section-contents {
@@ -462,9 +469,15 @@ footer {
   }
 
   .contact-section {
-    left: 0;
-    right: 0;
     width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-section h2 {
+    width: 1024px;
+  }
+
+  .contact-form {
     margin: 0 auto;
   }
 
@@ -489,14 +502,17 @@ footer {
   }
 
   footer {
-    left: 0;
-    right: 0;
     width: 100%;
     margin: 0 auto;
+    margin-left: -15px;
   }
 }
 
 @media (max-width: 1024px) {
+  .main-container {
+    padding: 0px 20px;
+  }
+
   .landing-section {
     margin: 0px 20px;
     margin-top: 15%;
@@ -530,17 +546,11 @@ footer {
   }
 
   .contact-section {
-    left: 0;
-    right: 0;
-    width: 100%;
+    width: 1024px;
     margin: 0 auto;
   }
 
   footer {
-    width: 100%;
-    left: 0; 
-    right: 0; 
-    margin-left: 0; 
-    margin-right: 0;
+    width: 1320px;
   }
 }
