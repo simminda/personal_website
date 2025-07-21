@@ -17,16 +17,18 @@
     <nav class="main-nav bold-text">
       <div class="main-nav-logo-title">
         <img src="img/logo.png" alt="simphiwe-logo">
-        <div>{Simphiwe}</div>
+        <div>Simphiwe</div>
       </div>
       <div class="main-nav-page-links">
         <ul class="main-nav-links">
-          <li><a href="#body">.Home( )</a></li>
-          <li><a href="#about-section">.About( )</a></li>
-          <li><a href="#skills-section">.Skills( )</a></li>
-          <li><a href="#work-section">.Work( )</a></li>
-          <li><a href="#contact-section">.Contact( )</a></li>
+          <li><a href="#body">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#work-section">Work</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
+        <img src="img/dark-mode.png" id="darkModeToggle" alt="dark-mode" width="30px"
+          style="margin-left: 20px; cursor: pointer;">
       </div>
     </nav>
     <section class="landing-section" id="landing-section">
@@ -152,7 +154,7 @@
           </div>
           <h4><a href="https://github.com/simminda/task_manager">Commerce (Auctions)</a> <span>Django (Python)</span>
           </h4>
-          <p>Create, edit, assign and finalize tasks. Generate progress reports</p>
+          <p>Django-based web application designed to simulate an online auction platform</p>
           <a class="github-btn" href="https://github.com/simminda/commerce" target="_blank">See More</a>
         </div>
         <div>
@@ -162,7 +164,7 @@
             <img class="img-responsive" src="img/work/fm-asset_screen.png" alt="Fleet Manager Asset Image">
           </div>
           <h4><a href="https://github.com/simminda/mini_chase_game">Fleet Manager</a> <span>Django (Python)</span></h4>
-          <p>Dodge the bad guys and the fireballs to claim the ultimate prize</p>
+          <p>Fleet Manager is a web-based application designed to help organizations manage their vehicle assets efficiently.</p>
           <a class="github-btn" href="https://github.com/simminda/fleet_manager" target="_blank">See More</a>
         </div>
       </div>
@@ -187,6 +189,25 @@
   <footer>
     &copy; Simphiwe Ndaba
   </footer>
+
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    const body = document.getElementById('body');
+
+    // On page load, check saved preference
+    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+    if (darkModeEnabled) {
+      body.classList.add('dark-mode');
+    }
+
+    // Toggle dark mode and save preference
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDarkMode = body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDarkMode);
+    });
+  </script>
+
 </body>
 
 </html>
