@@ -15,13 +15,8 @@ body.dark-mode {
   color: #ffffff;
 }
 
-.dark-mode .main-nav,
-.dark-mode .contact-section,
-.dark-mode .skills-section,
-.dark-mode .about-section,
-.dark-mode .work-section {
-  background-color: #1e1e1e;
-  
+.dark-mode .main-nav {
+  background-color: #1e1e1e; 
 }
 
 .dark-mode .main-nav a {
@@ -545,15 +540,57 @@ footer {
     padding: 0px 20px;
   }
 
+  .landing-section {
+    min-height: 400px;
+  }
+
+  .about-section {
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+    width: 100% !important; 
+  }
+
+  .about-section-contents {
+      gap: 50px !important;
+  }
+
+  .skills-section {
+    width: 95% !important; 
+  }
+
+  .work-section {
+    margin-bottom: 50px !important;
+    width: initial !important;
+  }
+
+  .work-section-contents {
+    width: 98% !important; 
+  }
+
+  .work-section-contents div {
+    width: 550px;
+  }
+
+  .work-section-contents div a {
+    color: rgb(199, 198, 198);
+  }
+
+  .github-btn {
+    color:rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .image-cycle img {
+    width: 400px;
+  }
+
   .contact-section {
     left: 0;
     right: 0;
-    width: 100%;
+    width: 100% !important;
     margin: 0 auto;
   }
 
   footer {
-    width: 100%;
     margin: 0 auto;
     margin-left: -15px;
   }
