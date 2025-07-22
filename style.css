@@ -273,7 +273,7 @@ body.dark-mode {
 .about-section h2 {
   text-decoration: underline;
   padding-bottom: 30px;
-  margin-top:20px;
+  padding-top:20px;
   margin-left:20px;
 }
 
@@ -306,6 +306,10 @@ body.dark-mode {
   z-index: -1;
 }
 
+.about-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
 
 .about-section-left {
   margin: auto;
@@ -332,7 +336,7 @@ body.dark-mode {
 }
 
 .skills-section {
-  padding: 60px 20px;
+  padding: 20px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -378,17 +382,18 @@ body.dark-mode {
 
 
 .work-section-contents {
-  margin: 30px 0px 50px 0px;
+  margin: 10px 0px;
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 20px;
 }
 
 
 .image-cycle {
   position: relative;
-  width: 600px;
-  height: 375px;
+  width: 580px;
+  height: 370px;
   overflow: hidden;
 }
 
@@ -396,8 +401,8 @@ body.dark-mode {
   position: absolute;
   top: 0;
   left: 0;
-  width: 600px;
-  height: 375px;
+  width: 580px;
+  height: 370px;
   object-fit: contain;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -436,8 +441,8 @@ body.dark-mode {
   }
 }
 
-.work-section-contents  {
-  padding: 20px;
+.work-section-contents div {
+  width: 582px
 }
 
 .work-section-contents div a {
@@ -460,6 +465,7 @@ body.dark-mode {
 .work-section h2 {
   text-decoration: underline;
   margin-left: 20px;
+  padding-top: 20px;
 }
 
 
