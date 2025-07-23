@@ -19,12 +19,30 @@ body.dark-mode {
   background-color: #1e1e1e; 
 }
 
+.dark-mode .main-navbar {
+  background-color: #1e1e1e; 
+}
+
 .dark-mode .main-nav a {
   color: #ffffff;
 }
 
+.dark-mode .social-icons i {
+  color: #fff;
+}
+
+#darkModeToggleIcon {
+  cursor: pointer;
+  color: #333; /* light mode default */
+  transition: color 0.3s ease;
+}
+
+.dark-mode #darkModeToggleIcon {
+  color: #fff;
+}
+
 .main-container {
-  width: 1280px;
+  width: 1227px;
   margin: 0 auto;
 }
 
@@ -32,27 +50,28 @@ body.dark-mode {
   font-weight: 700;
 }
 
+.main-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
   font-size: x-large;
   height: 76px;
-  margin: auto 0;
+  margin: auto;
   align-items: center;
   gap: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  max-width: 1227px;
   background-color: white;
-  z-index: 9999;
-  padding: 0 5px;
-  /* optional: for spacing */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .main-nav-page-links {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -89,7 +108,11 @@ body.dark-mode {
 }
 
 .main-nav-links li a:hover {
-  color: rgb(151, 111, 59);
+  background: linear-gradient(to right, rgb(151, 111, 59), rgb(202, 177, 145));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   cursor: pointer;
 }
 
@@ -111,9 +134,14 @@ body.dark-mode {
   min-height: 100vh;
 }
 
-.landing-section-my-name {
-  color: rgb(151, 111, 59);
+.gradient-text {
+  background: linear-gradient(to right, rgb(151, 111, 59), rgb(202, 177, 145));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
+
 
 .connect-btn,
 .github-btn {
@@ -480,6 +508,10 @@ footer {
 
 /* styles for small mobile screens */
 @media (max-width: 480px) {
+  .main-nav {
+    width: 480px;
+  }
+
   .main-container {
     width: 100%;
     margin: 0 auto;
@@ -488,7 +520,6 @@ footer {
   .landing-section {
     flex-direction: column;
     align-items: center;
-    width: 1024px;
   }
 
   .about-section-contents {
@@ -503,6 +534,11 @@ footer {
 
   .skills-section-right {
     width: auto;
+  }
+
+  .work-section {
+    margin-left: 160px !important;
+    width: 400px;
   }
 
   .work-section-contents {

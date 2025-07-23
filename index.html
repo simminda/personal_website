@@ -1,213 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Website</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-
-<body id="body">
-  <div class="main-container">
-    <nav class="main-nav bold-text">
-      <div class="main-nav-logo-title">
-        <img src="img/logo.png" alt="simphiwe-logo">
-        <div>Simphiwe</div>
-      </div>
-      <div class="main-nav-page-links">
-        <ul class="main-nav-links">
-          <li><a href="#body">Home</a></li>
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#skills-section">Skills</a></li>
-          <li><a href="#work-section">Work</a></li>
-          <li><a href="#contact-section">Contact</a></li>
-        </ul>
-        <img src="img/dark-mode.png" id="darkModeToggle" alt="dark-mode" width="30px"
-          style="margin-left: 20px; cursor: pointer;">
-      </div>
-    </nav>
-    <section class="landing-section" id="landing-section">
-      <div class="landing-section-left">
-        <h1>
-          Hi, <br> I'm <span class="landing-section-my-name">Simphiwe</span> <br> Software Engineer
-        </h1>
-        <button class="connect-btn">Connect</button>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/simphiwe-n-35075b140/" target="_blank"><i
-              class="fab fa-linkedin fa-2x"></i></a>
-          <a href="https://github.com/simminda" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://facebook.com/your-profile" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-        </div>
-      </div>
-      <div class="landing-section-right">
-        <div class="landing-section-right-img-container">
-          <img src="img/simphiwe-ndaba.png" alt="Simphiwe Ndaba image" width="400px">
-        </div>
-      </div>
-    </section>
-    <section class="about-section" id="about-section">
-      <h2>About</h2>
-      <div class="about-section-contents">
-        <div class="about-section-left">
-          <img src="img/simphiwe-about.jpg" alt="Simphiwe About section image">
-        </div>
-        <div class="about-section-right">
-          <p>I am a motivated software developer with a strong foundation in Java, Python, and
-            JavaScript, and a unique background in financial accounting. Adept at building and
-            deploying scalable applications, solving complex problems, and delivering
-            high-quality projects. Looking to leverage both technical and finance expertise to
-            contribute to impactful software solutions.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills-section" id="skills-section">
-      <h2>Skills</h2>
-      <div class="skills-section-content">
-        <div class="skills-section-left">
-          <ul class="skills-list">
-            <li>
-              <img src="img/logos/python.png" alt="Python logo"> Python
-              <div class="bar-container">
-                <div class="bar-fill" style="width: 80%"></div>
-              </div>
-            </li>
-            <li>
-              <img src="img/logos/javascript.png" alt="JavaScript logo"> JavaScript
-              <div class="bar-container">
-                <div class="bar-fill" style="width: 65%"></div>
-              </div>
-            </li>
-            <li>
-              <img src="img/logos/mysql.png" alt="MySQL logo"> SQL
-              <div class="bar-container">
-                <div class="bar-fill" style="width: 60%"></div>
-              </div>
-            </li>
-            <li>
-              <img src="img/logos/HTML5.png" alt="HTML logo"> HTML
-              <div class="bar-container">
-                <div class="bar-fill" style="width: 70%"></div>
-              </div>
-            </li>
-            <li>
-              <img src="img/logos/CSS3.png" alt="CSS logo"> CSS
-              <div class="bar-container">
-                <div class="bar-fill" style="width: 75%"></div>
-              </div>
-            </li>
-            <li>
-              <img src="img/logos/github.png" alt="GitHub logo"> GitHub
-              <div class="bar-container">
-                <div class="bar-fill" style="width: 60%"></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="skills-section-right">
-          <img src="img/dev.jpg" alt="Dev at workstation">
-        </div>
-      </div>
-    </section>
-
-    <Section class="work-section" id="work-section">
-      <h2>Work</h2>
-      <div class="work-section-contents">
-        <div>
-          <div class="image-cycle">
-            <img class="img-responsive" src="img/work/ems-employee_list.png" alt="My Projects Image">
-            <img class="img-responsive" src="img/work/ems-payrolll_summary.png" alt="My Projects Image">
-            <img class="img-responsive" src="img/work/ems-payslip.png" alt="My Projects Image">
+  <body id="body">
+    <div class="main-container">
+      <nav class="main-navbar">
+        <div class="main-nav bold-text">
+          <div class="main-nav-logo-title">
+            <img src="img/logo.png" alt="simphiwe-logo" />
+            <div class="gradient-text">Simphiwe</div>
           </div>
-          <h4><a href="https://github.com/simminda/task_manager">Employee Management System</a> <span>Django
-              (Python)</span></h4>
-          <p>A Django-based web application built to streamline employee record management and payroll processing</p>
-          <a class="github-btn" href="https://github.com/simminda/payroll" target="_blank">See More</a>
-        </div>
-        <div>
-          <div class="image-cycle">
-            <img class="img-responsive" src="img/work/eld-1.png" alt="Trip Planner & ELD Logger landing page">
-            <img class="img-responsive" src="img/work/eld-2.png" alt="Trip Planner & ELD Logger landing page">
-            <img class="img-responsive" src="img/work/eld-3.png" alt="Trip Planner & ELD Logger landing page">
+          <div class="main-nav-page-links">
+            <ul class="main-nav-links">
+              <li><a href="#body">Home</a></li>
+              <li><a href="#about-section">About</a></li>
+              <li><a href="#skills-section">Skills</a></li>
+              <li><a href="#work-section">Work</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            <div id="darkModeToggle">
+              <i id="darkModeToggleIcon" class="fas fa-moon"></i>
+            </div>
           </div>
-          <h4><a href="https://github.com/simminda/mini_chase_game">Trip Planner & ELD Logger</a> <span>React |
-              Django</span></h4>
-          <p>Trip Planner & ELD Logger is a full-stack web application designed for property-carrying truck
-            drivers to efficiently plan trips and maintain compliant Electronic Logging Device (ELD) records.
-          </p>
-          <a class="github-btn" href="https://github.com/simminda/route_logger" target="_blank">See More</a>
         </div>
-      </div>
-      <hr>
-      <div class="work-section-contents">
-        <div>
-          <div class="image-cycle">
-            <img class="img-responsive" src="img/work/commerce_home.png" alt="My Projects Image">
-            <img class="img-responsive" src="img/work/commerce_home2.png" alt="My Projects Image">
-            <img class="img-responsive" src="img/work/commerce_manage.png" alt="My Projects Image">
+      </nav>
+      <section class="landing-section" id="landing-section">
+        <div class="landing-section-left">
+          <h1>
+            Hi, <br />
+            I'm <span class="landing-section-my-name gradient-text">Simphiwe</span> <br />
+            Software Engineer
+          </h1>
+          <button class="connect-btn">Connect</button>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/simphiwe-n-35075b140/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a href="https://github.com/simminda" target="_blank"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a href="https://facebook.com/your-profile" target="_blank"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
           </div>
-          <h4><a href="https://github.com/simminda/task_manager">Commerce (Auctions)</a> <span>Django (Python)</span>
-          </h4>
-          <p>Django-based web application designed to simulate an online auction platform</p>
-          <a class="github-btn" href="https://github.com/simminda/commerce" target="_blank">See More</a>
         </div>
-        <div>
-          <div class="image-cycle">
-            <img class="img-responsive" src="img/work/fm-home_screen.png" alt="Fleet Manager dashboard Image">
-            <img class="img-responsive" src="img/work/fm-asset_listing.png" alt="Fleet Manager Assets Image">
-            <img class="img-responsive" src="img/work/fm-asset_screen.png" alt="Fleet Manager Asset Image">
+        <div class="landing-section-right">
+          <div class="landing-section-right-img-container">
+            <img
+              src="img/simphiwe-ndaba.png"
+              alt="Simphiwe Ndaba image"
+              width="400px"
+            />
           </div>
-          <h4><a href="https://github.com/simminda/mini_chase_game">Fleet Manager</a> <span>Django (Python)</span></h4>
-          <p>Fleet Manager is a web-based application designed to help organizations manage their vehicle assets efficiently.</p>
-          <a class="github-btn" href="https://github.com/simminda/fleet_manager" target="_blank">See More</a>
         </div>
-      </div>
-    </Section>
-    <section class="contact-section" id="contact-section">
-      <h2>Let's Connect</h2>
-      <form class="contact-form" action="https://formspree.io/f/xpwlzqop" method="POST">
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required>
+      </section>
+      <section class="about-section" id="about-section">
+        <h2>About</h2>
+        <div class="about-section-contents">
+          <div class="about-section-left">
+            <img
+              src="img/simphiwe-about.jpg"
+              alt="Simphiwe About section image"
+            />
+          </div>
+          <div class="about-section-right">
+            <p>
+              I am a motivated software developer with a strong foundation in
+              Java, Python, and JavaScript, and a unique background in financial
+              accounting. Adept at building and deploying scalable applications,
+              solving complex problems, and delivering high-quality projects.
+              Looking to leverage both technical and finance expertise to
+              contribute to impactful software solutions.
+            </p>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Your Email" required>
+      </section>
+
+      <section class="skills-section" id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-section-content">
+          <div class="skills-section-left">
+            <ul class="skills-list">
+              <li>
+                <img src="img/logos/python.png" alt="Python logo" /> Python
+                <div class="bar-container">
+                  <div class="bar-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/logos/javascript.png" alt="JavaScript logo" />
+                JavaScript
+                <div class="bar-container">
+                  <div class="bar-fill" style="width: 65%"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/logos/mysql.png" alt="MySQL logo" /> SQL
+                <div class="bar-container">
+                  <div class="bar-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/logos/HTML5.png" alt="HTML logo" /> HTML
+                <div class="bar-container">
+                  <div class="bar-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/logos/CSS3.png" alt="CSS logo" /> CSS
+                <div class="bar-container">
+                  <div class="bar-fill" style="width: 75%"></div>
+                </div>
+              </li>
+              <li>
+                <img src="img/logos/github.png" alt="GitHub logo" /> GitHub
+                <div class="bar-container">
+                  <div class="bar-fill" style="width: 60%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-section-right">
+            <img src="img/dev.jpg" alt="Dev at workstation" />
+          </div>
         </div>
-        <div class="form-group">
-          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      </section>
+
+      <section class="work-section" id="work-section">
+        <h2>Work</h2>
+        <div class="work-section-contents">
+          <div>
+            <div class="image-cycle">
+              <img
+                class="img-responsive"
+                src="img/work/ems-employee_list.png"
+                alt="My Projects Image"
+              />
+              <img
+                class="img-responsive"
+                src="img/work/ems-payrolll_summary.png"
+                alt="My Projects Image"
+              />
+              <img
+                class="img-responsive"
+                src="img/work/ems-payslip.png"
+                alt="My Projects Image"
+              />
+            </div>
+            <h4>
+              <a href="https://github.com/simminda/task_manager"
+                >Employee Management System</a
+              >
+              <span>Django (Python)</span>
+            </h4>
+            <p>
+              A Django-based web application built to streamline employee record
+              management and payroll processing
+            </p>
+            <a
+              class="github-btn"
+              href="https://github.com/simminda/payroll"
+              target="_blank"
+              >See More</a
+            >
+          </div>
+          <div>
+            <div class="image-cycle">
+              <img
+                class="img-responsive"
+                src="img/work/eld-1.png"
+                alt="Trip Planner & ELD Logger landing page"
+              />
+              <img
+                class="img-responsive"
+                src="img/work/eld-2.png"
+                alt="Trip Planner & ELD Logger landing page"
+              />
+              <img
+                class="img-responsive"
+                src="img/work/eld-3.png"
+                alt="Trip Planner & ELD Logger landing page"
+              />
+            </div>
+            <h4>
+              <a href="https://github.com/simminda/mini_chase_game"
+                >Trip Planner & ELD Logger</a
+              >
+              <span>React | Django</span>
+            </h4>
+            <p>
+              Trip Planner & ELD Logger is a full-stack web application designed
+              for property-carrying truck drivers to efficiently plan trips and
+              maintain compliant Electronic Logging Device (ELD) records.
+            </p>
+            <a
+              class="github-btn"
+              href="https://github.com/simminda/route_logger"
+              target="_blank"
+              >See More</a
+            >
+          </div>
         </div>
-        <input type="text" name="_gotcha" style="display:none">
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </div>
-  <footer>
-    &copy; Simphiwe Ndaba
-  </footer>
+        <hr />
+        <div class="work-section-contents">
+          <div>
+            <div class="image-cycle">
+              <img
+                class="img-responsive"
+                src="img/work/commerce_home.png"
+                alt="My Projects Image"
+              />
+              <img
+                class="img-responsive"
+                src="img/work/commerce_home2.png"
+                alt="My Projects Image"
+              />
+              <img
+                class="img-responsive"
+                src="img/work/commerce_manage.png"
+                alt="My Projects Image"
+              />
+            </div>
+            <h4>
+              <a href="https://github.com/simminda/task_manager"
+                >Commerce (Auctions)</a
+              >
+              <span>Django (Python)</span>
+            </h4>
+            <p>
+              Django-based web application designed to simulate an online
+              auction platform
+            </p>
+            <a
+              class="github-btn"
+              href="https://github.com/simminda/commerce"
+              target="_blank"
+              >See More</a
+            >
+          </div>
+          <div>
+            <div class="image-cycle">
+              <img
+                class="img-responsive"
+                src="img/work/fm-home_screen.png"
+                alt="Fleet Manager dashboard Image"
+              />
+              <img
+                class="img-responsive"
+                src="img/work/fm-asset_listing.png"
+                alt="Fleet Manager Assets Image"
+              />
+              <img
+                class="img-responsive"
+                src="img/work/fm-asset_screen.png"
+                alt="Fleet Manager Asset Image"
+              />
+            </div>
+            <h4>
+              <a href="https://github.com/simminda/mini_chase_game"
+                >Fleet Manager</a
+              >
+              <span>Django (Python)</span>
+            </h4>
+            <p>
+              Fleet Manager is a web-based application designed to help
+              organizations manage their vehicle assets efficiently.
+            </p>
+            <a
+              class="github-btn"
+              href="https://github.com/simminda/fleet_manager"
+              target="_blank"
+              >See More</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact-section">
+        <h2>Let's Connect</h2>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xpwlzqop"
+          method="POST"
+        >
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display: none" />
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+    <footer>&copy; Simphiwe Ndaba</footer>
 
-  <script>
-    const toggle = document.getElementById('darkModeToggle');
-    const body = document.getElementById('body');
+    <script>
+      const toggle = document.getElementById("darkModeToggle");
+      const body = document.getElementById("body");
+      const icon = document.getElementById("darkModeToggleIcon");
 
-    // On page load, check saved preference
-    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
-    if (darkModeEnabled) {
-      body.classList.add('dark-mode');
-    }
+      // On page load, check saved preference
+      const darkModeEnabled = localStorage.getItem("darkMode") === "true";
+      if (darkModeEnabled) {
+        body.classList.add("dark-mode");
+        icon.classList.replace("fa-moon", "fa-sun");
+      }
 
-    // Toggle dark mode and save preference
-    toggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      const isDarkMode = body.classList.contains('dark-mode');
-      localStorage.setItem('darkMode', isDarkMode);
-    });
-  </script>
+      // Toggle dark mode and save preference
+      toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        const isDarkMode = body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDarkMode);
 
-</body>
-
+        // Swap icon
+        if (isDarkMode) {
+          icon.classList.replace("fa-moon", "fa-sun");
+        } else {
+          icon.classList.replace("fa-sun", "fa-moon");
+        }
+      });
+    </script>
+  </body>
 </html>
