@@ -222,6 +222,7 @@ body.dark-mode {
   padding-bottom: 30px;
   padding-top: 50px;
   text-align: center;
+  font-size: 2rem;
 }
 
 .about-section-right {
@@ -524,6 +525,10 @@ body.dark-mode .skill-section-content2-li {
   text-decoration: none;
 }
 
+.dark-mode .work-section-project-name {
+  color: #bebdbd;
+}
+
 .work-section-contents div span {
   font-size: 14px;
   font-weight: 400;
@@ -721,6 +726,7 @@ body.dark-mode .skill-section-content2-li {
 
   .contact-section {
     margin: 0 auto;
+    width: 400px !important;
   }
 
   .contact-section-contents {
@@ -852,13 +858,8 @@ body.dark-mode .skill-section-content2-li {
   .contact-section {
     left: 0;
     right: 0;
-    width: 100% !important;
+    width: 100%;
     margin: 0 auto;
-  }
-
-  footer {
-    margin: 0 auto;
-    margin-left: -15px;
   }
 }
 
@@ -902,9 +903,5 @@ body.dark-mode .skill-section-content2-li {
   .contact-section {
     width: 1024px;
     margin: 0 auto;
-  }
-
-  footer {
-    width: 1320px;
   }
 }
