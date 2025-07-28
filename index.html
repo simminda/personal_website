@@ -25,6 +25,13 @@
             <img src="img/logo.png" alt="simphiwe-logo" />
             <div class="gradient-text">Simphiwe</div>
           </div>
+
+          <!-- Hamburger Button -->
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Nav Links + Dark Mode -->
           <div class="main-nav-page-links">
             <ul class="main-nav-links">
               <li><a href="#body">Home</a></li>
@@ -39,6 +46,7 @@
           </div>
         </div>
       </nav>
+
       <section class="landing-section" id="landing-section">
         <div class="landing-section-left">
           <h1>
@@ -509,7 +517,8 @@
         <h2>
           Let's <span class="gradient-text">Connect</span><br /><span
             class="contact-section-subheader"
-            >Got a project in mind? Let's discuss how we can bring it to life.</span
+            >Got a project in mind? Let's discuss how we can bring it to
+            life.</span
           >
         </h2>
         <div class="contact-section-contents">
@@ -548,10 +557,27 @@
             </form>
           </div>
           <div class="form-right">
-            <p><i class="fas fa-envelope"></i> Email <br><span>simmi.ndaba@gmail.com</span></p>
-            <p><i class="fas fa-phone"></i> Phone <br><span>+27 83 338 7386</span></p>
-            <p><i class="fas fa-map-marker-alt"></i> Location <br><span>Johannesburg, ZA</span></p>
-            <p><i class="fas fa-clock"></i> Availability <br><span>I am currently available for freelance projects and full-time opportunities</span></p>
+            <p>
+              <i class="fas fa-envelope"></i> Email <br /><span
+                >simmi.ndaba@gmail.com</span
+              >
+            </p>
+            <p>
+              <i class="fas fa-phone"></i> Phone <br /><span
+                >+27 83 338 7386</span
+              >
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Location <br /><span
+                >Johannesburg, ZA</span
+              >
+            </p>
+            <p>
+              <i class="fas fa-clock"></i> Availability <br /><span
+                >I am currently available for freelance projects and full-time
+                opportunities</span
+              >
+            </p>
           </div>
         </div>
       </section>
@@ -581,6 +607,14 @@
         } else {
           icon.classList.replace("fa-sun", "fa-moon");
         }
+      });
+
+      // toggle menu
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinksContainer = document.querySelector(".main-nav-page-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinksContainer.classList.toggle("active");
       });
     </script>
   </body>

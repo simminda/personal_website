@@ -1,10 +1,11 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   padding-top: 76px;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,11 +17,11 @@ body.dark-mode {
 }
 
 .dark-mode .main-nav {
-  background-color: #1e1e1e; 
+  background-color: #1e1e1e;
 }
 
 .dark-mode .main-navbar {
-  background-color: #1e1e1e; 
+  background-color: #1e1e1e;
 }
 
 .dark-mode .main-nav a {
@@ -71,9 +72,18 @@ body.dark-mode {
   background-color: white;
 }
 
+/* Hamburger button hidden on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+
 .main-nav-page-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-nav-links {
@@ -96,12 +106,12 @@ body.dark-mode {
 }
 
 .main-nav-links li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 0;
-  height: 3px; 
+  height: 3px;
   background-color: rgb(151, 111, 59);
   transform: translateX(-50%);
   transition: width 0.3s ease;
@@ -142,7 +152,6 @@ body.dark-mode {
   color: transparent;
 }
 
-
 .connect-btn,
 .github-btn {
   display: inline-block;
@@ -161,7 +170,6 @@ body.dark-mode {
   padding: 0.375rem 0.75rem;
   border-radius: 0.25rem;
   width: 87px;
-
 }
 
 .connect-btn:hover,
@@ -184,7 +192,7 @@ body.dark-mode {
 .landing-section-right-img-container img {
   position: absolute;
   bottom: 0%;
-  margin-left: 40px
+  margin-left: 40px;
 }
 
 .social-icons {
@@ -207,14 +215,14 @@ body.dark-mode {
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin:20px;
+  margin: 20px;
 }
 
 .about-section h2 {
   text-decoration: underline;
   padding-bottom: 30px;
-  padding-top:20px;
-  margin-left:20px;
+  padding-top: 20px;
+  margin-left: 20px;
 }
 
 .about-section-right {
@@ -283,7 +291,7 @@ body.dark-mode {
 
 .skills-section {
   padding: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .skills-section-left,
@@ -449,7 +457,6 @@ body.dark-mode .skill-section-content2-li {
   }
 }
 
-
 /* WORK SECTION */
 .work-section-contents {
   margin: 10px 0px;
@@ -498,7 +505,6 @@ body.dark-mode .skill-section-content2-li {
 
 /* Smooth cycling without gaps */
 @keyframes cycleImages {
-
   0%,
   32% {
     opacity: 1;
@@ -511,7 +517,7 @@ body.dark-mode .skill-section-content2-li {
 }
 
 .work-section-contents div {
-  width: 582px
+  width: 582px;
 }
 
 .work-section-contents div a {
@@ -534,12 +540,11 @@ body.dark-mode .skill-section-content2-li {
   font-size: 24px;
 }
 
-
 /* Contact section styling */
 .contact-section {
   position: relative;
   padding: 30px 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -585,14 +590,13 @@ body.dark-mode .skill-section-content2-li {
 .contact-form textarea:focus {
   border-color: white;
   outline: none;
-
 }
 
 .contact-form button {
   padding: 14px;
   background-color: black;
   color: rgb(204, 203, 203);
-  border: solid .5px rgba(255, 255, 255, 0.2);
+  border: solid 0.5px rgba(255, 255, 255, 0.2);
   font-weight: 500;
   font-size: 16px;
   border-radius: 8px;
@@ -626,7 +630,7 @@ body.dark-mode .skill-section-content2-li {
   border: solid 1px gray;
   border-radius: 10px;
   padding: 20px;
-  background: linear-gradient( rgb(203, 183, 157), rgb(202, 177, 145));
+  background: linear-gradient(rgb(203, 183, 157), rgb(202, 177, 145));
 }
 .form-right p:hover {
   box-shadow: 0 0 20px rgba(151, 111, 59, 0.5);
@@ -637,7 +641,6 @@ body.dark-mode .skill-section-content2-li {
   font-size: 0.8rem;
   color: rgb(236, 235, 235);
 }
-
 
 /* styles for small mobile screens */
 @media (max-width: 480px) {
@@ -705,6 +708,69 @@ body.dark-mode .skill-section-content2-li {
 }
 
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: #222;
+  }
+
+  .dark-mode .menu-toggle i {
+    color: #fff;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .main-nav-page-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding-top: 10px;
+  }
+
+  .main-nav-page-links.active {
+    display: flex;
+  }
+
+  .main-nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-nav-links li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .dark-mode .main-nav-page-links {
+    background-color: #333;
+  }
+
+  #darkModeToggle {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .main-nav-links li a {
+    color: #222;
+  }
+
+  /* Dark mode */
+  .dark-mode .main-nav-links li a {
+    color: #fff;
+  }
+
+  .dark-mode .main-nav-links li a:hover {
+    background: linear-gradient(to right, #fff, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   body {
     padding: 0px 20px;
   }
@@ -716,15 +782,15 @@ body.dark-mode .skill-section-content2-li {
   .about-section {
     margin: 0px !important;
     margin-bottom: 20px !important;
-    width: 100% !important; 
+    width: 100% !important;
   }
 
   .about-section-contents {
-      gap: 50px !important;
+    gap: 50px !important;
   }
 
   .skills-section {
-    width: 95% !important; 
+    width: 95% !important;
   }
 
   .work-section {
@@ -733,7 +799,7 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .work-section-contents {
-    width: 98% !important; 
+    width: 98% !important;
   }
 
   .work-section-contents div {
@@ -745,7 +811,7 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .github-btn {
-    color:rgba(0, 0, 0, 0.05) !important;
+    color: rgba(0, 0, 0, 0.05) !important;
   }
 
   .image-cycle img {
