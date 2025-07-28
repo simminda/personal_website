@@ -731,8 +731,8 @@ body.dark-mode .skill-section-content2-li {
     padding-top: 10px;
   }
 
-  .main-nav-page-links.active {
-    display: flex;
+  .main-nav-page-links.open {
+    display: block;
   }
 
   .main-nav-links {

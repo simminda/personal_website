@@ -588,6 +588,10 @@
       const body = document.getElementById("body");
       const icon = document.getElementById("darkModeToggleIcon");
 
+      // Define menu toggle elements
+      const menuToggleBtn = document.querySelector(".menu-toggle");
+      const navLinksContainer = document.querySelector(".main-nav-page-links");
+
       // On page load, check saved preference
       const darkModeEnabled = localStorage.getItem("darkMode") === "true";
       if (darkModeEnabled) {
@@ -609,12 +613,28 @@
         }
       });
 
-      // toggle menu
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navLinksContainer = document.querySelector(".main-nav-page-links");
+      // Hamburger menu logic
+      let menuOpen = false;
 
-      menuToggle.addEventListener("click", () => {
-        navLinksContainer.classList.toggle("active");
+      menuToggleBtn.addEventListener("click", () => {
+        navLinksContainer.classList.toggle("open");
+        menuOpen = !menuOpen;
+      });
+
+      // Close menu on scroll
+      window.addEventListener("scroll", () => {
+        if (menuOpen) {
+          navLinksContainer.classList.remove("open");
+          menuOpen = false;
+        }
+      });
+
+      // Close menu on nav link click
+      document.querySelectorAll(".main-nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinksContainer.classList.remove("open");
+          menuOpen = false;
+        });
       });
     </script>
   </body>
