@@ -219,10 +219,9 @@ body.dark-mode {
 }
 
 .about-section h2 {
-  text-decoration: underline;
   padding-bottom: 30px;
-  padding-top: 20px;
-  margin-left: 20px;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .about-section-right {
@@ -643,14 +642,24 @@ body.dark-mode .skill-section-content2-li {
 }
 
 /* styles for small mobile screens */
-@media (max-width: 480px) {
-  .main-nav {
-    width: 480px;
+@media (max-width: 425px) {
+  body {
+    padding: 0px !important;
+    width: 425px;
+  }
+
+  img {
+    max-width: 400px;
+  }
+
+  .main-navbar {
+    width: 100%;
   }
 
   .main-container {
-    width: 100%;
+    width: 425px;
     margin: 0 auto;
+    padding: 0px !important;
   }
 
   .landing-section {
@@ -658,9 +667,20 @@ body.dark-mode .skill-section-content2-li {
     align-items: center;
   }
 
+  .landing-section-right-img-container {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
   .about-section-contents {
     flex-direction: column;
     align-items: center;
+    width: 400px;
+  }
+
+  .about-section-right {
+    height: fit-content;
+    padding: 30px 20px;
   }
 
   .skills-section-content {
@@ -668,42 +688,53 @@ body.dark-mode .skill-section-content2-li {
     align-items: center;
   }
 
-  .skills-section-right {
-    width: auto;
+  .skills-section-left,
+  .skills-section-mid,
+  .skills-section-right
+   {
+    width: 400px;
+    padding: 10px;
   }
+  
 
   .work-section {
-    margin-left: 160px !important;
-    width: 400px;
+    width: 420px !important;
+  }
+
+  .work-section h2{
+    margin-bottom: 10px;
   }
 
   .work-section-contents {
     flex-direction: column;
     align-items: center;
+    gap: 5px !important;
   }
 
-  .work-section-contents p {
-    width: 600px;
+  .work-section-contents div {
+    width: 420px !important;
+  }
+
+  .github-btn {
+    color: #373737 !important;
   }
 
   .contact-section {
-    width: 100%;
     margin: 0 auto;
   }
 
-  .contact-section h2 {
-    width: 1024px;
+  .contact-section-contents {
+    flex-direction: column;
+    margin: 0 auto;
   }
 
   .contact-form {
     margin: 0 auto;
   }
 
-  footer {
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin: 0 auto;
+  .form-left,
+  .form-right {
+    width: 420px;
   }
 }
 
@@ -795,11 +826,11 @@ body.dark-mode .skill-section-content2-li {
 
   .work-section {
     margin-bottom: 50px !important;
-    width: initial !important;
+    width: initial;
   }
 
   .work-section-contents {
-    width: 98% !important;
+    width: 98%;
   }
 
   .work-section-contents div {
@@ -811,7 +842,7 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .github-btn {
-    color: rgba(0, 0, 0, 0.05) !important;
+    color: rgba(0, 0, 0, 0.05);
   }
 
   .image-cycle img {
