@@ -230,12 +230,24 @@ body.dark-mode {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: left;
-  padding: 0 40px;
+  padding: 20px 40px;
   overflow: hidden;
   max-width: 50%;
+  background-color: #fff;
+  height: 100%;
+  border: solid 1px rgb(155, 154, 154);
+  border-radius: 20px;
+  height: 523px;
+}
+.about-section-right:hover {
+  box-shadow: 0 0 20px rgba(151, 111, 59, 0.5);
+  transform: translateY(-2px);
+}
+.dark-mode .about-section-right {
+  background-color: #222;
 }
 
 .about-section {
@@ -251,9 +263,10 @@ body.dark-mode {
   gap: 20px;
 }
 
-.about-me-highlights{
-  background-color: #e0e0e0;
+.about-me-highlights {
+  background-color: #fff;
   padding: 20px;
+  border: solid 1px rgb(155, 154, 154);
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -265,8 +278,8 @@ body.dark-mode {
   transform: translateY(-2px);
 }
 
-.dark-mode .about-me-highlights{
-  background-color:#222;
+.dark-mode .about-me-highlights {
+  background-color: #222;
 }
 
 .about-me-highlights div {
@@ -274,14 +287,13 @@ body.dark-mode {
   font-weight: 700;
 }
 
-
 .about-me-highlights div span {
   font-size: small;
   font-weight: 100;
 }
 
 .about-me-highlights i {
-  background: linear-gradient( rgb(151, 111, 59), rgb(202, 177, 145));
+  background: linear-gradient(rgb(151, 111, 59), rgb(202, 177, 145));
   border-radius: 10px;
   padding: 20px 15px;
   width: 30px;
@@ -487,22 +499,25 @@ body.dark-mode .skill-section-content2-li {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
 }
 
 .image-cycle {
   position: relative;
-  width: 580px;
-  height: 370px;
+  width: 560px;
+  height: 270px;
   overflow: hidden;
+  border-radius: 0px !important;
+  padding: 0px !important;
+  border: none !important;
 }
 
 .image-cycle img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 580px;
-  height: 370px;
+  width: 560px;
+  height: 270px;
   object-fit: contain;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -541,7 +556,11 @@ body.dark-mode .skill-section-content2-li {
 }
 
 .work-section-contents div {
-  width: 582px;
+  /* Overlapping with img-cycle */
+  border: solid 1px rgb(155, 154, 154);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 570px !important;
 }
 
 .work-section-contents div a {
@@ -682,7 +701,7 @@ body.dark-mode .skill-section-content2-li {
   }
 
   img {
-    max-width: 400px;
+    max-width: 380px;
   }
 
   .main-navbar {
@@ -701,8 +720,9 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .landing-section-right-img-container {
-    max-width: 400px;
-    max-height: 400px;
+    margin-top: 20px;
+    max-width: 380px;
+    max-height: 380px;
   }
 
   .about-section-contents {
@@ -713,13 +733,14 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .about-section-left {
-      width: 90%;
-      margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .about-section-right {
     padding: 0px 20px;
-    max-width: 90%;
+    max-width: 80%;
+    height: fit-content;
   }
 
   .skills-section {
@@ -734,38 +755,54 @@ body.dark-mode .skill-section-content2-li {
 
   .skills-section-left,
   .skills-section-mid,
-  .skills-section-right
-   {
+  .skills-section-right {
     width: 350px;
     padding: 10px;
   }
-  
 
   .work-section {
     width: inherit !important;
-    margin: 0px 15px !important;
+    margin: 0px !important;
   }
 
-  .work-section h2{
-    margin-bottom: 10px;
+  .work-section h2 {
+    margin-bottom: 0px;
   }
 
   .work-section-contents {
     flex-direction: column;
     align-items: center;
     gap: 5px !important;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin: 0 auto;
   }
 
   .work-section-contents p {
-    width: 410px !important;
+    width: 380px !important;
   }
 
   .work-section-contents div {
-    width: 420px !important;
+    width: 380px !important;
+    padding: 10px;
+  }
+
+  .work-section-contents div a {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .work-section hr {
+    display: none;
+  }
+
+  .image-cycle {
+    max-height: 270px;
   }
 
   .github-btn {
     color: #373737 !important;
+    margin-top: 30px !important;
   }
 
   .contact-section {
