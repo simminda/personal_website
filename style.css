@@ -271,7 +271,7 @@ body.dark-mode {
   text-align: center;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
 }
 .about-me-highlights:hover {
   box-shadow: 0 0 20px rgba(151, 111, 59, 0.5);
@@ -295,8 +295,8 @@ body.dark-mode {
 .about-me-highlights i {
   background: linear-gradient(rgb(151, 111, 59), rgb(202, 177, 145));
   border-radius: 10px;
-  padding: 20px 15px;
-  width: 30px;
+  width: 20px;
+  padding: 10px 10px;
 }
 
 .skills-section h2,
