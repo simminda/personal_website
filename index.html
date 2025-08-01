@@ -1,649 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
 
-  <body id="body">
-    <div class="main-container">
-      <nav class="main-navbar">
-        <div class="main-nav bold-text">
-          <div class="main-nav-logo-title">
-            <img src="img/logo.png" alt="simphiwe-logo" />
-            <div class="gradient-text">Simphiwe</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body id="body">
+  <div class="main-container">
+    <nav class="main-navbar">
+      <div class="main-nav bold-text">
+        <div class="main-nav-logo-title">
+          <img src="img/logo.png" alt="simphiwe-logo" />
+          <div class="gradient-text">Simphiwe</div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Nav Links + Dark Mode -->
+        <div class="main-nav-page-links">
+          <ul class="main-nav-links">
+            <li><a href="#body">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#work-section">Work</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+          <div id="darkModeToggle">
+            <i id="darkModeToggleIcon" class="fas fa-moon"></i>
           </div>
+        </div>
+      </div>
+    </nav>
 
-          <!-- Hamburger Button -->
-          <button class="menu-toggle" aria-label="Toggle menu">
-            <i class="fas fa-bars"></i>
-          </button>
+    <section class="landing-section" id="landing-section">
+      <div class="landing-section-left">
+        <h1>
+          Hi, <br />
+          I'm
+          <span class="landing-section-my-name gradient-text">Simphiwe</span>
+          <br />
+          Software Engineer
+        </h1>
+        <button class="connect-btn">Connect</button>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/simphiwe-n-35075b140/" target="_blank"><i
+              class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/simminda" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://facebook.com/your-profile" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="landing-section-right">
+        <div class="landing-section-right-img-container">
+          <img src="img/simphiwe-ndaba.png" alt="Simphiwe Ndaba image" width="400px" />
+        </div>
+      </div>
+    </section>
 
-          <!-- Nav Links + Dark Mode -->
-          <div class="main-nav-page-links">
-            <ul class="main-nav-links">
-              <li><a href="#body">Home</a></li>
-              <li><a href="#about-section">About</a></li>
-              <li><a href="#skills-section">Skills</a></li>
-              <li><a href="#work-section">Work</a></li>
-              <li><a href="#contact-section">Contact</a></li>
-            </ul>
-            <div id="darkModeToggle">
-              <i id="darkModeToggleIcon" class="fas fa-moon"></i>
+    <section class="about-section" id="about-section">
+      <h2>About <span class="gradient-text">Me</span><br /></h2>
+      <div class="about-section-contents">
+        <div class="about-section-left">
+          <div class="about-me-highlights">
+            <div><i class="fas fa-code"></i></div>
+            <div>
+              Clean Code <br>
+              <span>Writing maintainable and scalable code with best practices</span>
+            </div>
+          </div>
+          <div class="about-me-highlights">
+            <div><i class="fas fa-pencil-ruler"></i></div>
+            <div>
+              UI/UX Design <br>
+              <span>Creating beautiful and intuitive user interfaces</span>
+            </div>
+          </div>
+          <div class="about-me-highlights">
+            <div><i class="fas fa-tachometer-alt"></i></div>
+            <div>
+              Performance <br>
+              <span>Optimising applications for speed and efficiency</span>
+            </div>
+          </div>
+          <div class="about-me-highlights">
+            <div><i class="fas fa-lightbulb"></i></div>
+            <div>
+              Problem Solving <br>
+              <span>Approaching challenges with logical, creative, and efficient solutions</span>
+            </div>
+          </div>
+          <div class="about-me-highlights">
+            <div><i class="fas fa-vial"></i></div>
+            <div>
+              Testing <br>
+              <span>Ensuring application reliability with unit and integration testing</span>
             </div>
           </div>
         </div>
-      </nav>
+        <div class="about-section-right">
+          <p>
+            I am a motivated software developer with a strong foundation in
+            Java, Python, and JavaScript, and a unique background in financial
+            accounting. Adept at building and deploying scalable applications,
+            solving complex problems, and delivering high-quality projects.
+            Looking to leverage both technical and finance expertise to
+            contribute to impactful software solutions.
+          </p>
+          <p>
+            My journey into software development has been shaped by real-world experience and a deep curiosity for how
+            technology can solve everyday problems. From designing database-driven applications to building responsive
+            front-end interfaces, I've worked on projects that required both analytical thinking and creative design. I
+            enjoy collaborating across teams, especially where technical solutions intersect with business needs.
+          </p>
+          <p>
+            I bring a disciplined, detail-oriented approach to development - thanks in part to my background in
+            accounting, where accuracy and structure are paramount. Whether I'm writing clean, maintainable code or
+            diving into user stories to understand client pain points, I'm committed to continuous learning and
+            delivering work that drives results.
+          </p>
 
-      <section class="landing-section" id="landing-section">
-        <div class="landing-section-left">
-          <h1>
-            Hi, <br />
-            I'm
-            <span class="landing-section-my-name gradient-text">Simphiwe</span>
-            <br />
-            Software Engineer
-          </h1>
-          <button class="connect-btn">Connect</button>
-          <div class="social-icons">
-            <a
-              href="https://www.linkedin.com/in/simphiwe-n-35075b140/"
-              target="_blank"
-              ><i class="fab fa-linkedin fa-2x"></i
-            ></a>
-            <a href="https://github.com/simminda" target="_blank"
-              ><i class="fab fa-github fa-2x"></i
-            ></a>
-            <a href="https://facebook.com/your-profile" target="_blank"
-              ><i class="fab fa-facebook fa-2x"></i
-            ></a>
-          </div>
         </div>
-        <div class="landing-section-right">
-          <div class="landing-section-right-img-container">
-            <img
-              src="img/simphiwe-ndaba.png"
-              alt="Simphiwe Ndaba image"
-              width="400px"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="about-section" id="about-section">
-        <h2>About <span class="gradient-text">Me</span><br /></h2>
-        <div class="about-section-contents">
-          <div class="about-section-left">
-            <img
-              src="img/simphiwe-about.jpg"
-              alt="Simphiwe About section image"
-            />
-          </div>
-          <div class="about-section-right">
-            <p>
-              I am a motivated software developer with a strong foundation in
-              Java, Python, and JavaScript, and a unique background in financial
-              accounting. Adept at building and deploying scalable applications,
-              solving complex problems, and delivering high-quality projects.
-              Looking to leverage both technical and finance expertise to
-              contribute to impactful software solutions.
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="skills-section" id="skills-section">
-        <h2>
-          My <span class="gradient-text">Skills</span><br /><span
-            class="skills-subheader"
-            >Technologies and tools I work with</span
-          >
-        </h2>
-        <div class="skills-section-content">
-          <div class="skills-section-left">
-            <h3 class="gradient-text">Frontend Development</h3>
-            <ul class="skills-list skills-frontend">
-              <li>
-                <div class="skill-label">
-                  <span>Python</span>
-                  <span class="skill-percentage">75%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 75%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>JavaScript</span>
-                  <span class="skill-percentage">60%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 60%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>React</span>
-                  <span class="skill-percentage">50%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 50%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>TypeScript</span>
-                  <span class="skill-percentage">40%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 40%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>HTML5</span>
-                  <span class="skill-percentage">85%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 85%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>CSS3</span>
-                  <span class="skill-percentage">80%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 80%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>Bootstrap</span>
-                  <span class="skill-percentage">70%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 70%"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="skills-section-mid">
-            <h3 class="gradient-text">Backend Development</h3>
-            <ul class="skills-list skills-backend">
-              <li>
-                <div class="skill-label">
-                  <span>Django</span>
-                  <span class="skill-percentage">70%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 70%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>Node.js</span>
-                  <span class="skill-percentage">5%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 5%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>Express.js</span>
-                  <span class="skill-percentage">5%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 5%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>MongoDB</span>
-                  <span class="skill-percentage">5%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 5%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>PostgreSQL</span>
-                  <span class="skill-percentage">50%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 50%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>REST APIs</span>
-                  <span class="skill-percentage">20%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 20%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>GraphQL</span>
-                  <span class="skill-percentage">2%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 2%"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="skills-section-right">
-            <h3 class="gradient-text">Tools and Technologies</h3>
-            <ul class="skills-list tools-and-tech">
-              <li>
-                <div class="skill-label">
-                  <span>Git</span>
-                  <span class="skill-percentage">50%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 50%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>Docker</span>
-                  <span class="skill-percentage">33%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 33%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>Vite</span>
-                  <span class="skill-percentage">50%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 50%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>Webpack</span>
-                  <span class="skill-percentage">10%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 10%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>Vercel</span>
-                  <span class="skill-percentage">5%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 5%"></div>
-                </div>
-              </li>
-              <li>
-                <div class="skill-label">
-                  <span>AWS</span>
-                  <span class="skill-percentage">25%</span>
-                </div>
-                <div class="bar-container">
-                  <div class="bar-fill" style="width: 10%"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="skill-section-content2">
-          <h3 class="gradient-text">Certifications & Learning</h3>
-          <div class="scroll-wrapper">
-            <ul class="scroll-list">
-              <li class="skill-section-content2-li">
-                <a href="#"
-                  ><img src="img/veritas.png" /> CS50W: Web Programming with
-                  Python and JavaScript</a
-                >
-              </li>
-              <li class="skill-section-content2-li">
-                <a href="#"
-                  ><img src="img/veritas.jpeg" /> CS50P: Introduction to
-                  Programming with Python</a
-                >
-              </li>
-              <li class="skill-section-content2-li">
-                <a href="#"
-                  ><img src="img/hyperion_development_south_africa_logo.jpeg" />
-                  Software Engineer Bootcamp</a
-                >
-              </li>
-
-              <li class="skill-section-content2-li">
-                <a
-                  href="https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript"
-                  target="_blank"
-                  ><img src="img/veritas.jpeg" /> CS50W: Web Programming with
-                  Python and JavaScript</a
-                >
-              </li>
-              <li class="skill-section-content2-li">
-                <a
-                  href="https://pll.harvard.edu/course/cs50s-introduction-programming-python"
-                  target="_blank"
-                  ><img src="img/veritas.jpeg" /> CS50P: Introduction to
-                  Programming with Python</a
-                >
-              </li>
-              <li class="skill-section-content2-li">
-                <a
-                  href="https://www.hyperiondev.com/portfolio/SN21030002206/"
-                  target="_blank"
-                  ><img src="img/hyperion_development_south_africa_logo.jpeg" />
-                  Software Engineer Bootcamp</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="work-section" id="work-section">
-        <h2>
-          My <span class="gradient-text">Projects</span><br /><span
-            class="work-subheader"
-            >A showcase of my projects and contributions</span
-          >
-        </h2>
-        <div class="work-section-contents">
-          <div>
-            <div class="image-cycle">
-              <img
-                class="img-responsive"
-                src="img/work/ems-employee_list.png"
-                alt="My Projects Image"
-              />
-              <img
-                class="img-responsive"
-                src="img/work/ems-payrolll_summary.png"
-                alt="My Projects Image"
-              />
-              <img
-                class="img-responsive"
-                src="img/work/ems-payslip.png"
-                alt="My Projects Image"
-              />
-            </div>
-            <h4>
-              <a
-                href="https://github.com/simminda/task_manager"
-                class="work-section-project-name"
-                >Employee Management System</a
-              >
-              <span>Django (Python)</span>
-            </h4>
-            <p>
-              A Django-based web application built to streamline employee record
-              management and payroll processing
-            </p>
-            <a
-              class="github-btn"
-              href="https://github.com/simminda/payroll"
-              target="_blank"
-              >See More</a
-            >
-          </div>
-          <div>
-            <div class="image-cycle">
-              <img
-                class="img-responsive"
-                src="img/work/eld-1.png"
-                alt="Trip Planner & ELD Logger landing page"
-              />
-              <img
-                class="img-responsive"
-                src="img/work/eld-2.png"
-                alt="Trip Planner & ELD Logger landing page"
-              />
-              <img
-                class="img-responsive"
-                src="img/work/eld-3.png"
-                alt="Trip Planner & ELD Logger landing page"
-              />
-            </div>
-            <h4>
-              <a
-                href="https://github.com/simminda/mini_chase_game"
-                class="work-section-project-name"
-                >Trip Planner & ELD Logger</a
-              >
-              <span>React | Django</span>
-            </h4>
-            <p>
-              Trip Planner & ELD Logger is a full-stack web application designed
-              for property-carrying truck drivers to efficiently plan trips and
-              maintain compliant Electronic Logging Device (ELD) records.
-            </p>
-            <a
-              class="github-btn"
-              href="https://github.com/simminda/route_logger"
-              target="_blank"
-              >See More</a
-            >
-          </div>
-        </div>
-        <hr />
-        <div class="work-section-contents">
-          <div>
-            <div class="image-cycle">
-              <img
-                class="img-responsive"
-                src="img/work/commerce_home.png"
-                alt="My Projects Image"
-              />
-              <img
-                class="img-responsive"
-                src="img/work/commerce_home2.png"
-                alt="My Projects Image"
-              />
-              <img
-                class="img-responsive"
-                src="img/work/commerce_manage.png"
-                alt="My Projects Image"
-              />
-            </div>
-            <h4>
-              <a
-                href="https://github.com/simminda/task_manager"
-                class="work-section-project-name"
-                >Commerce (Auctions)</a
-              >
-              <span>Django (Python)</span>
-            </h4>
-            <p>
-              Django-based web application designed to simulate an online
-              auction platform
-            </p>
-            <a
-              class="github-btn"
-              href="https://github.com/simminda/commerce"
-              target="_blank"
-              >See More</a
-            >
-          </div>
-          <div>
-            <div class="image-cycle">
-              <img
-                class="img-responsive"
-                src="img/work/fm-home_screen.png"
-                alt="Fleet Manager dashboard Image"
-              />
-              <img
-                class="img-responsive"
-                src="img/work/fm-asset_listing.png"
-                alt="Fleet Manager Assets Image"
-              />
-              <img
-                class="img-responsive"
-                src="img/work/fm-asset_screen.png"
-                alt="Fleet Manager Asset Image"
-              />
-            </div>
-            <h4>
-              <a
-                href="https://github.com/simminda/mini_chase_game"
-                class="work-section-project-name"
-                >Fleet Manager</a
-              >
-              <span>Django (Python)</span>
-            </h4>
-            <p>
-              Fleet Manager is a web-based application designed to help
-              organizations manage their vehicle assets efficiently.
-            </p>
-            <a
-              class="github-btn"
-              href="https://github.com/simminda/fleet_manager"
-              target="_blank"
-              >See More</a
-            >
-          </div>
-        </div>
-      </section>
-      <section class="contact-section" id="contact-section">
-        <h2>
-          Let's <span class="gradient-text">Connect</span><br /><span
-            class="contact-section-subheader"
-            >Got a project in mind? Let's discuss how we can bring it to
-            life.</span
-          >
-        </h2>
-        <div class="contact-section-contents">
-          <div class="form-left">
-            <form
-              class="contact-form"
-              action="https://formspree.io/f/xpwlzqop"
-              method="POST"
-            >
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
+    <section class="skills-section" id="skills-section">
+      <h2>
+        My <span class="gradient-text">Skills</span><br /><span class="skills-subheader">Technologies and tools I work
+          with</span>
+      </h2>
+      <div class="skills-section-content">
+        <div class="skills-section-left">
+          <h3 class="gradient-text">Frontend Development</h3>
+          <ul class="skills-list skills-frontend">
+            <li>
+              <div class="skill-label">
+                <span>Python</span>
+                <span class="skill-percentage">75%</span>
               </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 75%"></div>
               </div>
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  rows="5"
-                  required
-                ></textarea>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>JavaScript</span>
+                <span class="skill-percentage">60%</span>
               </div>
-              <input type="text" name="_gotcha" style="display: none" />
-              <button type="submit">Send Message</button>
-            </form>
-          </div>
-          <div class="form-right">
-            <p>
-              <i class="fas fa-envelope"></i> Email <br /><span
-                >simmi.ndaba@gmail.com</span
-              >
-            </p>
-            <p>
-              <i class="fas fa-phone"></i> Phone <br /><span
-                >+27 83 338 7386</span
-              >
-            </p>
-            <p>
-              <i class="fas fa-map-marker-alt"></i> Location <br /><span
-                >Johannesburg, ZA</span
-              >
-            </p>
-            <p>
-              <i class="fas fa-clock"></i> Availability <br /><span
-                >I am currently available for freelance projects and full-time
-                opportunities</span
-              >
-            </p>
-          </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 60%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>React</span>
+                <span class="skill-percentage">50%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 50%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>TypeScript</span>
+                <span class="skill-percentage">40%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 40%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>HTML5</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 85%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>CSS3</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 80%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>Bootstrap</span>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 70%"></div>
+              </div>
+            </li>
+          </ul>
         </div>
-      </section>
-    </div>
+        <div class="skills-section-mid">
+          <h3 class="gradient-text">Backend Development</h3>
+          <ul class="skills-list skills-backend">
+            <li>
+              <div class="skill-label">
+                <span>Django</span>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 70%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>Node.js</span>
+                <span class="skill-percentage">5%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 5%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>Express.js</span>
+                <span class="skill-percentage">5%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 5%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>MongoDB</span>
+                <span class="skill-percentage">5%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 5%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>PostgreSQL</span>
+                <span class="skill-percentage">50%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 50%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>REST APIs</span>
+                <span class="skill-percentage">20%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 20%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>GraphQL</span>
+                <span class="skill-percentage">2%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 2%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="skills-section-right">
+          <h3 class="gradient-text">Tools and Technologies</h3>
+          <ul class="skills-list tools-and-tech">
+            <li>
+              <div class="skill-label">
+                <span>Git</span>
+                <span class="skill-percentage">50%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 50%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>Docker</span>
+                <span class="skill-percentage">33%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 33%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>Vite</span>
+                <span class="skill-percentage">50%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 50%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>Webpack</span>
+                <span class="skill-percentage">10%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 10%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>Vercel</span>
+                <span class="skill-percentage">5%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 5%"></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-label">
+                <span>AWS</span>
+                <span class="skill-percentage">25%</span>
+              </div>
+              <div class="bar-container">
+                <div class="bar-fill" style="width: 10%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill-section-content2">
+        <h3 class="gradient-text">Certifications & Learning</h3>
+        <div class="scroll-wrapper">
+          <ul class="scroll-list">
+            <li class="skill-section-content2-li">
+              <a href="#"><img src="img/veritas.png" /> CS50W: Web Programming with
+                Python and JavaScript</a>
+            </li>
+            <li class="skill-section-content2-li">
+              <a href="#"><img src="img/veritas.jpeg" /> CS50P: Introduction to
+                Programming with Python</a>
+            </li>
+            <li class="skill-section-content2-li">
+              <a href="#"><img src="img/hyperion_development_south_africa_logo.jpeg" />
+                Software Engineer Bootcamp</a>
+            </li>
 
-    <script>
-      const toggle = document.getElementById("darkModeToggle");
-      const body = document.getElementById("body");
-      const icon = document.getElementById("darkModeToggleIcon");
+            <li class="skill-section-content2-li">
+              <a href="https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript" target="_blank"><img
+                  src="img/veritas.jpeg" /> CS50W: Web Programming with
+                Python and JavaScript</a>
+            </li>
+            <li class="skill-section-content2-li">
+              <a href="https://pll.harvard.edu/course/cs50s-introduction-programming-python" target="_blank"><img
+                  src="img/veritas.jpeg" /> CS50P: Introduction to
+                Programming with Python</a>
+            </li>
+            <li class="skill-section-content2-li">
+              <a href="https://www.hyperiondev.com/portfolio/SN21030002206/" target="_blank"><img
+                  src="img/hyperion_development_south_africa_logo.jpeg" />
+                Software Engineer Bootcamp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      // Define menu toggle elements
-      const menuToggleBtn = document.querySelector(".menu-toggle");
-      const navLinksContainer = document.querySelector(".main-nav-page-links");
+    <section class="work-section" id="work-section">
+      <h2>
+        My <span class="gradient-text">Projects</span><br /><span class="work-subheader">A showcase of my projects and
+          contributions</span>
+      </h2>
+      <div class="work-section-contents">
+        <div>
+          <div class="image-cycle">
+            <img class="img-responsive" src="img/work/ems-employee_list.png" alt="My Projects Image" />
+            <img class="img-responsive" src="img/work/ems-payrolll_summary.png" alt="My Projects Image" />
+            <img class="img-responsive" src="img/work/ems-payslip.png" alt="My Projects Image" />
+          </div>
+          <h4>
+            <a href="https://github.com/simminda/task_manager" class="work-section-project-name">Employee Management
+              System</a>
+            <span>Django (Python)</span>
+          </h4>
+          <p>
+            A Django-based web application built to streamline employee record
+            management and payroll processing
+          </p>
+          <a class="github-btn" href="https://github.com/simminda/payroll" target="_blank">See More</a>
+        </div>
+        <div>
+          <div class="image-cycle">
+            <img class="img-responsive" src="img/work/eld-1.png" alt="Trip Planner & ELD Logger landing page" />
+            <img class="img-responsive" src="img/work/eld-2.png" alt="Trip Planner & ELD Logger landing page" />
+            <img class="img-responsive" src="img/work/eld-3.png" alt="Trip Planner & ELD Logger landing page" />
+          </div>
+          <h4>
+            <a href="https://github.com/simminda/mini_chase_game" class="work-section-project-name">Trip Planner & ELD
+              Logger</a>
+            <span>React | Django</span>
+          </h4>
+          <p>
+            Trip Planner & ELD Logger is a full-stack web application designed
+            for property-carrying truck drivers to efficiently plan trips and
+            maintain compliant Electronic Logging Device (ELD) records.
+          </p>
+          <a class="github-btn" href="https://github.com/simminda/route_logger" target="_blank">See More</a>
+        </div>
+      </div>
+      <hr />
+      <div class="work-section-contents">
+        <div>
+          <div class="image-cycle">
+            <img class="img-responsive" src="img/work/commerce_home.png" alt="My Projects Image" />
+            <img class="img-responsive" src="img/work/commerce_home2.png" alt="My Projects Image" />
+            <img class="img-responsive" src="img/work/commerce_manage.png" alt="My Projects Image" />
+          </div>
+          <h4>
+            <a href="https://github.com/simminda/task_manager" class="work-section-project-name">Commerce (Auctions)</a>
+            <span>Django (Python)</span>
+          </h4>
+          <p>
+            Django-based web application designed to simulate an online
+            auction platform
+          </p>
+          <a class="github-btn" href="https://github.com/simminda/commerce" target="_blank">See More</a>
+        </div>
+        <div>
+          <div class="image-cycle">
+            <img class="img-responsive" src="img/work/fm-home_screen.png" alt="Fleet Manager dashboard Image" />
+            <img class="img-responsive" src="img/work/fm-asset_listing.png" alt="Fleet Manager Assets Image" />
+            <img class="img-responsive" src="img/work/fm-asset_screen.png" alt="Fleet Manager Asset Image" />
+          </div>
+          <h4>
+            <a href="https://github.com/simminda/mini_chase_game" class="work-section-project-name">Fleet Manager</a>
+            <span>Django (Python)</span>
+          </h4>
+          <p>
+            Fleet Manager is a web-based application designed to help
+            organizations manage their vehicle assets efficiently.
+          </p>
+          <a class="github-btn" href="https://github.com/simminda/fleet_manager" target="_blank">See More</a>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact-section">
+      <h2>
+        Let's <span class="gradient-text">Connect</span><br /><span class="contact-section-subheader">Got a project in
+          mind? Let's discuss how we can bring it to
+          life.</span>
+      </h2>
+      <div class="contact-section-contents">
+        <div class="form-left">
+          <form class="contact-form" action="https://formspree.io/f/xpwlzqop" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <input type="text" name="_gotcha" style="display: none" />
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="form-right">
+          <p>
+            <i class="fas fa-envelope"></i> Email <br /><span>simmi.ndaba@gmail.com</span>
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> Phone <br /><span>+27 83 338 7386</span>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Location <br /><span>Johannesburg, ZA</span>
+          </p>
+          <p>
+            <i class="fas fa-clock"></i> Availability <br /><span>I am currently available for freelance projects and
+              full-time
+              opportunities</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 
-      // On page load, check saved preference
-      const darkModeEnabled = localStorage.getItem("darkMode") === "true";
-      if (darkModeEnabled) {
-        body.classList.add("dark-mode");
+  <script>
+    const toggle = document.getElementById("darkModeToggle");
+    const body = document.getElementById("body");
+    const icon = document.getElementById("darkModeToggleIcon");
+
+    // Define menu toggle elements
+    const menuToggleBtn = document.querySelector(".menu-toggle");
+    const navLinksContainer = document.querySelector(".main-nav-page-links");
+
+    // On page load, check saved preference
+    const darkModeEnabled = localStorage.getItem("darkMode") === "true";
+    if (darkModeEnabled) {
+      body.classList.add("dark-mode");
+      icon.classList.replace("fa-moon", "fa-sun");
+    }
+
+    // Toggle dark mode and save preference
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      const isDarkMode = body.classList.contains("dark-mode");
+      localStorage.setItem("darkMode", isDarkMode);
+
+      // Swap icon
+      if (isDarkMode) {
         icon.classList.replace("fa-moon", "fa-sun");
+      } else {
+        icon.classList.replace("fa-sun", "fa-moon");
       }
+    });
 
-      // Toggle dark mode and save preference
-      toggle.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-        const isDarkMode = body.classList.contains("dark-mode");
-        localStorage.setItem("darkMode", isDarkMode);
+    // Hamburger menu logic
+    let menuOpen = false;
 
-        // Swap icon
-        if (isDarkMode) {
-          icon.classList.replace("fa-moon", "fa-sun");
-        } else {
-          icon.classList.replace("fa-sun", "fa-moon");
-        }
+    menuToggleBtn.addEventListener("click", () => {
+      navLinksContainer.classList.toggle("open");
+      menuOpen = !menuOpen;
+    });
+
+    // Close menu on scroll
+    window.addEventListener("scroll", () => {
+      if (menuOpen) {
+        navLinksContainer.classList.remove("open");
+        menuOpen = false;
+      }
+    });
+
+    // Close menu on nav link click
+    document.querySelectorAll(".main-nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinksContainer.classList.remove("open");
+        menuOpen = false;
       });
+    });
+  </script>
+</body>
 
-      // Hamburger menu logic
-      let menuOpen = false;
-
-      menuToggleBtn.addEventListener("click", () => {
-        navLinksContainer.classList.toggle("open");
-        menuOpen = !menuOpen;
-      });
-
-      // Close menu on scroll
-      window.addEventListener("scroll", () => {
-        if (menuOpen) {
-          navLinksContainer.classList.remove("open");
-          menuOpen = false;
-        }
-      });
-
-      // Close menu on nav link click
-      document.querySelectorAll(".main-nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinksContainer.classList.remove("open");
-          menuOpen = false;
-        });
-      });
-    </script>
-  </body>
 </html>

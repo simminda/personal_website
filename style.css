@@ -227,32 +227,15 @@ body.dark-mode {
 }
 
 .about-section-right {
-  position: relative;
   margin: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 634px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: left;
   padding: 0 40px;
-  z-index: 0;
   overflow: hidden;
-}
-
-.about-section-right::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(img/binary_bckgrnd.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
-  /* adjust transparency here */
-  z-index: -1;
+  max-width: 50%;
 }
 
 .about-section {
@@ -262,6 +245,46 @@ body.dark-mode {
 
 .about-section-left {
   margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-me-highlights{
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about-me-highlights:hover {
+  box-shadow: 0 0 20px rgba(151, 111, 59, 0.5);
+  transform: translateY(-2px);
+}
+
+.dark-mode .about-me-highlights{
+  background-color:#222;
+}
+
+.about-me-highlights div {
+  align-content: center;
+  font-weight: 700;
+}
+
+
+.about-me-highlights div span {
+  font-size: small;
+  font-weight: 100;
+}
+
+.about-me-highlights i {
+  background: linear-gradient( rgb(151, 111, 59), rgb(202, 177, 145));
+  border-radius: 10px;
+  padding: 20px 15px;
+  width: 30px;
 }
 
 .skills-section h2,
@@ -685,15 +708,18 @@ body.dark-mode .skill-section-content2-li {
   .about-section-contents {
     flex-direction: column;
     align-items: center;
+    width: 415px;
+    margin: 5px;
   }
 
   .about-section-left {
-      margin: initial;
+      width: 90%;
+      margin: 0 auto;
   }
 
   .about-section-right {
-    height: fit-content;
-    padding: 30px 20px;
+    padding: 0px 20px;
+    max-width: 90%;
   }
 
   .skills-section {
