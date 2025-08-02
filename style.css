@@ -985,3 +985,9 @@ body.dark-mode .skill-section-content2-li {
     margin: 0 auto;
   }
 }
+
+@media (min-width: 768px) {
+  .btn-float-right {
+    float: right;
+  }
+}
