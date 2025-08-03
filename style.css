@@ -788,6 +788,7 @@ body.dark-mode .skill-section-content2-li {
     padding-bottom: 0px;
     margin-top: 0px;
     margin: 0 auto;
+    width: 420px !important;
   }
 
   .work-section-contents p {
