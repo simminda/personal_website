@@ -789,6 +789,7 @@ body.dark-mode .skill-section-content2-li {
     margin-top: 0px;
     margin: 0 auto;
     width: 420px !important;
+    margin-left: 0px !important;
   }
 
   .work-section-contents p {
@@ -981,10 +982,13 @@ body.dark-mode .skill-section-content2-li {
 
   .work-section-contents {
     width: 768px;
+    gap: 10px !important;
+    margin-left: -20px;
   }
 
   .work-section-contents div {
-    width: 550px;
+    width: 350px;
+    padding: 10px;
   }
 
   .work-section-contents div a {
