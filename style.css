@@ -715,9 +715,8 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .main-container {
-    width: 425px;
+    width: 425px !important;
     margin: 0 auto;
-    padding: 0px !important;
   }
 
   .landing-section {
@@ -739,14 +738,17 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .about-section-left {
-    width: 90%;
-    margin: 0 auto;
+    margin: 30px auto;
+    margin-left: 40px !important;
+  }
+
+  .about-me-highlights {
+    width: 320px;
   }
 
   .about-section-right {
-    padding: 0px 20px;
-    max-width: 80%;
-    height: fit-content;
+    margin-left: -240px !important;
+    max-width: 330px !important;
   }
 
   .skills-section {
@@ -894,6 +896,12 @@ body.dark-mode .skill-section-content2-li {
     -webkit-text-fill-color: transparent;
   }
 
+  .main-container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0px !important;
+  }
+
   body {
     padding: 0px 20px;
   }
@@ -909,11 +917,49 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .about-section-contents {
-    gap: 50px !important;
+    gap: 15px !important;
+    width: 680px;
+    margin: 0 auto;
+  }
+
+  .about-section-left {
+    max-width: 360px;
+    margin-left: -40px;
+  }
+
+  .about-section-right {
+    padding: 15px;
+    height: auto;
+    max-width: 330px;
+    margin: 0;
+  }
+
+  .landing-section {
+    max-width: 768px;
+    margin-left: 0px !important;
+  }
+
+  .landing-section-left {
+    max-width: 360px;
+    font-size: 28px;
+  }
+
+  .landing-section-right-img-container {
+    height: 280px;
+    width: 280px;
+  }
+
+  .landing-section-right-img-container img {
+    width: 280px;
   }
 
   .skills-section {
-    width: 95%;
+    width: 768px;
+    padding: 0px;
+  }
+
+  .skills-section-content {
+    gap: 20px;
   }
 
   .work-section {
@@ -970,7 +1016,7 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .skills-section {
-    width: 1100px;
+    width: 100%;
   }
 
   .work-section {
