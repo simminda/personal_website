@@ -288,7 +288,7 @@ body.dark-mode {
   margin: 0 auto;
 }
 
-.about-me-highlights div:nth-child(2){
+.about-me-highlights div:nth-child(2) {
   max-width: 450px;
 }
 
@@ -500,6 +500,10 @@ body.dark-mode .skill-section-content2-li {
 }
 
 /* WORK SECTION */
+.work-section {
+  margin-top: 50px;
+}
+
 .work-section-contents {
   margin: 10px 0px;
   display: flex;
@@ -764,7 +768,7 @@ body.dark-mode .skill-section-content2-li {
   .skills-section-left,
   .skills-section-mid,
   .skills-section-right {
-    width: 350px;
+    width: 350px !important;
     padding: 10px;
   }
 
@@ -814,8 +818,8 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .contact-section {
-    margin: 0 auto;
-    width: 400px !important;
+    margin-left: 10px !important;
+    width: 410px !important;
   }
 
   .contact-section-contents {
@@ -824,6 +828,7 @@ body.dark-mode .skill-section-content2-li {
 
   .contact-form {
     margin: 0 auto;
+    height: auto !important;
   }
 
   .form-left,
@@ -954,21 +959,27 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .skills-section {
-    width: 768px;
+    width: 728px;
     padding: 0px;
   }
 
   .skills-section-content {
-    gap: 20px;
+    gap: 10px;
+  }
+
+  .skills-section-left,
+  .skills-section-mid,
+  .skills-section-right {
+    width: 25%;
   }
 
   .work-section {
     margin-bottom: 50px !important;
-    width: initial;
+    width: 768px;
   }
 
   .work-section-contents {
-    width: 98%;
+    width: 768px;
   }
 
   .work-section-contents div {
@@ -988,10 +999,22 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .contact-section {
-    left: 0;
-    right: 0;
-    width: 100%;
     margin: 0 auto;
+    padding: 0;
+    margin-left: -40px;
+  }
+
+  .contact-section-contents {
+    gap: 20px;
+  }
+
+  .contact-form {
+    height: 400px;
+  }
+
+  .form-right,
+  .form-left {
+    width: 350px;
   }
 }
 
@@ -1015,13 +1038,8 @@ body.dark-mode .skill-section-content2-li {
     gap: 100px;
   }
 
-  .skills-section {
-    width: 100%;
-  }
-
   .work-section {
-    width: 1100px;
-    margin: 0px 20px;
+    width: auto;
   }
 
   .work-section-contents {
@@ -1030,11 +1048,6 @@ body.dark-mode .skill-section-content2-li {
 
   .image-cycle img {
     width: 550px;
-  }
-
-  .contact-section {
-    width: 1024px;
-    margin: 0 auto;
   }
 }
 
