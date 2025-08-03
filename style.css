@@ -570,7 +570,7 @@ body.dark-mode .skill-section-content2-li {
   border: solid 1px rgb(155, 154, 154);
   border-radius: 10px;
   padding: 20px;
-  max-width: 570px !important;
+  max-width: 570px;
 }
 
 .work-section-contents div a {
@@ -703,139 +703,43 @@ body.dark-mode .skill-section-content2-li {
   color: #333;
 }
 
-/* styles for small mobile screens */
-@media (max-width: 425px) {
-  body {
-    padding: 0px !important;
-    width: 425px;
-  }
-
-  img {
-    max-width: 380px;
-  }
-
-  .main-navbar {
-    width: 425px;
-  }
-
+@media (max-width: 1024px) {
   .main-container {
-    width: 425px !important;
-    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  #darkModeToggle {
+    margin-right: 20px;
   }
 
   .landing-section {
-    flex-direction: column;
-    align-items: center;
+    margin: 0px 20px;
+    margin-top: 15%;
+    justify-content: center;
   }
 
-  .landing-section-right-img-container {
-    margin-top: 20px;
-    max-width: 380px;
-    max-height: 380px;
+  .about-section {
+    margin: 0px 20px;
   }
 
   .about-section-contents {
-    flex-direction: column;
-    align-items: center;
-    width: 415px;
-    margin: 5px;
-  }
-
-  .about-section-left {
-    margin: 30px auto;
-    margin-left: 40px !important;
-  }
-
-  .about-me-highlights {
-    width: 320px;
-  }
-
-  .about-section-right {
-    margin-left: -240px !important;
-    max-width: 330px !important;
-  }
-
-  .skills-section {
-    width: inherit !important;
-    padding: 0px;
-  }
-
-  .skills-section-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skills-section-left,
-  .skills-section-mid,
-  .skills-section-right {
-    width: 350px !important;
-    padding: 10px;
+    gap: 50px;
   }
 
   .work-section {
-    width: inherit !important;
-    margin: 0px !important;
-  }
-
-  .work-section h2 {
-    margin-bottom: 0px;
+    width: auto;
   }
 
   .work-section-contents {
-    flex-direction: column;
-    align-items: center;
-    gap: 5px !important;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    margin: 0 auto;
-    width: 420px !important;
-    margin-left: 0px !important;
-  }
-
-  .work-section-contents p {
-    width: 380px !important;
+    gap: 20px;
   }
 
   .work-section-contents div {
-    width: 380px !important;
-    padding: 10px;
+    max-width: 440px;
   }
 
-  .work-section-contents div a {
-    display: flex;
-    margin: 0 auto;
-  }
-
-  .work-section hr {
-    display: none;
-  }
-
-  .image-cycle {
-    max-height: 270px;
-  }
-
-  .github-btn {
-    color: #373737 !important;
-    margin-top: 30px !important;
-  }
-
-  .contact-section {
-    margin-left: 10px !important;
-    width: 410px !important;
-  }
-
-  .contact-section-contents {
-    flex-direction: column;
-  }
-
-  .contact-form {
-    margin: 0 auto;
-    height: auto !important;
-  }
-
-  .form-left,
-  .form-right {
-    width: 400px;
+  .image-cycle img {
+    width: 440px;
   }
 }
 
@@ -1006,53 +910,164 @@ body.dark-mode .skill-section-content2-li {
   .contact-section {
     margin: 0 auto;
     padding: 0;
-    margin-left: -40px;
   }
 
   .contact-section-contents {
-    gap: 20px;
+    gap: 0px;
+    width:768px;
   }
 
   .contact-form {
     height: 400px;
+    padding: 40px 20px 10px;
   }
 
   .form-right,
   .form-left {
     width: 350px;
   }
+
+  .form-right {
+    margin-right: 40px;
+    height: fit-content;
+  }
 }
 
-@media (max-width: 1024px) {
+
+/* styles for small mobile screens */
+@media (max-width: 425px) {
+  body {
+    padding: 0px !important;
+    width: 425px;
+  }
+
+  img {
+    max-width: 380px;
+  }
+
+  .main-navbar {
+    width: 425px;
+  }
+
   .main-container {
-    padding: 0px 20px;
+    width: 425px !important;
+    margin: 0 auto;
   }
 
   .landing-section {
-    margin: 0px 20px;
-    margin-top: 15%;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about-section {
-    margin: 0px 20px;
-    width: 1100px;
+  .landing-section-right-img-container {
+    margin-top: 20px;
+    max-width: 380px;
+    max-height: 380px;
   }
 
   .about-section-contents {
-    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    width: 415px;
+    margin: 5px;
+  }
+
+  .about-section-left {
+    margin: 30px auto;
+    width: initial;
+  }
+
+  .about-me-highlights {
+    width: 320px;
+  }
+
+  .about-section-right {
+    max-width: 360px;
+  }
+
+  .skills-section {
+    width: inherit !important;
+    padding: 0px;
+  }
+
+  .skills-section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-section-left,
+  .skills-section-mid,
+  .skills-section-right {
+    width: 350px !important;
+    padding: 10px;
   }
 
   .work-section {
-    width: auto;
+    width: inherit !important;
+    margin-top: 70px;
+  }
+
+  .work-section h2 {
+    margin-bottom: 0px;
   }
 
   .work-section-contents {
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px !important;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin: 0 auto;
+    width: 420px !important;
+    margin-left: 0px !important;
   }
 
-  .image-cycle img {
-    width: 550px;
+  .work-section-contents p {
+    width: 380px !important;
+  }
+
+  .work-section-contents div {
+    width: 380px !important;
+    padding: 10px;
+  }
+
+  .work-section-contents div a {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .work-section hr {
+    display: none;
+  }
+
+  .image-cycle {
+    max-height: 270px;
+  }
+
+  .github-btn {
+    color: #373737 !important;
+    margin-top: 30px !important;
+  }
+
+  .contact-section {
+    margin-left: 10px !important;
+    width: 410px !important;
+  }
+
+  .contact-section-contents {
+    flex-direction: column;
+    max-width: 425px;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    height: auto !important;
+  }
+
+  .form-left,
+  .form-right {
+    width: 400px;
   }
 }
 
