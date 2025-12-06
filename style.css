@@ -1121,6 +1121,44 @@ body.dark-mode .skill-section-content2-li {
   }
 }
 
+@media (max-width: 320px) {
+  body,
+  .main-container,
+  .main-navbar,
+  .about-section,
+  .about-section-contents,
+  .work-section-contents,
+  .contact-section {
+    max-width: 320px;
+  }
+
+
+  .about-me-highlights,
+  .about-section-right {
+    max-width: 295px;
+  }
+
+  .landing-section-left,
+  .work-section-contents div,
+  .work-section-contents p,
+  .contact-section-contents,
+  .form-left,
+  .form-right {
+    max-width: 300px;
+  }
+
+  .skills-section {
+    max-width: 320px;
+    padding: 0px;
+  }
+
+  .skills-section-left,
+  .skills-section-mid,
+  .skills-section-right {
+    width: 300px;
+  }
+}
+
 @media (min-width: 768px) {
   .btn-float-right {
     float: right;
