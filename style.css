@@ -824,7 +824,6 @@ body.dark-mode .skill-section-content2-li {
   .about-section {
     margin: 0px !important;
     margin-bottom: 20px !important;
-    width: 100% !important;
   }
 
   .about-section-contents {
@@ -1002,7 +1001,7 @@ body.dark-mode .skill-section-content2-li {
   .skills-section-left,
   .skills-section-mid,
   .skills-section-right {
-    width: 350px !important;
+    width: 350px;
     padding: 10px;
   }
 
@@ -1071,6 +1070,54 @@ body.dark-mode .skill-section-content2-li {
   .form-left,
   .form-right {
     width: 400px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  body,
+  .main-container,
+  .main-navbar,
+  .about-section,
+  .about-section-contents,
+  .work-section-contents,
+  .contact-section {
+    max-width: 375px;
+  }
+
+
+  .about-me-highlights,
+  .about-section-right {
+    max-width: 305px;
+  }
+
+  .landing-section-left,
+  .work-section-contents div,
+  .work-section-contents p,
+  .contact-section-contents,
+  .form-left,
+  .form-right {
+    max-width: 320px;
+  }
+
+  .skills-section {
+    max-width: 375px;
+    padding: 0px;
+  }
+
+  .skills-section-left,
+  .skills-section-mid,
+  .skills-section-right {
+    width: 300px;
+  }
+
+  .work-subheader,
+  .work-section-contents p,
+  .about-section-right  {
+    font-size: 12px;
   }
 }
 
