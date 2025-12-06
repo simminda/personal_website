@@ -938,7 +938,7 @@ body.dark-mode .skill-section-content2-li {
 @media (max-width: 425px) {
   body {
     padding: 0px !important;
-    width: 425px;
+    width: 405px;
   }
 
   img {
@@ -946,11 +946,11 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .main-navbar {
-    width: 425px;
+    width: 405px;
   }
 
   .main-container {
-    width: 425px !important;
+    width: 405px !important;
     margin: 0 auto;
   }
 
@@ -965,10 +965,14 @@ body.dark-mode .skill-section-content2-li {
     max-height: 380px;
   }
 
+  .about-section {
+    width: 405px;
+  }
+
   .about-section-contents {
     flex-direction: column;
     align-items: center;
-    width: 415px;
+    width: 395px;
     margin: 5px;
   }
 
@@ -978,11 +982,11 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .about-me-highlights {
-    width: 320px;
+    width: 335px;
   }
 
   .about-section-right {
-    max-width: 360px;
+    max-width: 355px;
   }
 
   .skills-section {
@@ -1018,7 +1022,7 @@ body.dark-mode .skill-section-content2-li {
     padding-bottom: 0px;
     margin-top: 0px;
     margin: 0 auto;
-    width: 420px !important;
+    width: 405px !important;
     margin-left: 0px !important;
   }
 
@@ -1027,7 +1031,7 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .work-section-contents div {
-    width: 380px !important;
+    width: 365px !important;
     padding: 10px;
   }
 
@@ -1050,13 +1054,12 @@ body.dark-mode .skill-section-content2-li {
   }
 
   .contact-section {
-    margin-left: 10px !important;
-    width: 410px !important;
+    width: 395px !important;
   }
 
   .contact-section-contents {
     flex-direction: column;
-    max-width: 425px;
+    max-width: 405px;
     margin: 0 auto;
   }
 
